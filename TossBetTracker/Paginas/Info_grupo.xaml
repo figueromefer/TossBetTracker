@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" x:Class="TossBetTracker.Info_grupo">
+    <ContentPage.Content>
+        <AbsoluteLayout x:Name="absolutelayout">
+            <StackLayout BackgroundColor="#01528a" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
+            </StackLayout>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <controls:CircleImage WidthRequest="130" HeightRequest="130" BorderColor="White" BorderThickness="2" x:Name="fotogrupo" Margin="0,20,0,20" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"></controls:CircleImage>
+                    <Frame IsClippedToBounds="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CornerRadius="25" BackgroundColor="White" Padding="0">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="0,0,0,20" >
+                                <Label x:Name="nombregrupo" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Nombre del grupo" FontSize="18"></Label>
+                                <Label x:Name="descripciongrupo" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Descripcion" FontSize="14"></Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                <Label x:Name="lblmiembros" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" Text="Miembros:" FontSize="18" ></Label>
+                                <Label x:Name="lblnuevo" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" VerticalOptions="Center" Text="Agregar miembro +" FontSize="14" ></Label>
+                            </StackLayout>
+                            <ScrollView>
+                                <StackLayout x:Name="stackmiembros"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="20">
+
+                                </StackLayout>
+                            </ScrollView>
+                        </StackLayout>
+                    </Frame>
+                     
+                    
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

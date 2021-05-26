@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Toss" x:Class="TossBetTracker.Graficas" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label FontSize="22" Text="Porcentaje de aciertos" TextColor="#01528a" Margin="20,20,20,10">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                        </On>
+                        <On Platform="iOS" Value="Roboto-Bold">
+                        </On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <forms:ChartView x:Name="Chart2" HeightRequest="130" />
+            <Label FontSize="22" Text="Utilidad sobre capital" TextColor="#01528a" Margin="20,20,20,10">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                        </On>
+                        <On Platform="iOS" Value="Roboto-Bold">
+                        </On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <forms:ChartView x:Name="Chart4" HeightRequest="130" />
+            <Label FontSize="22" Text="Utilidad sobre lo apostado" TextColor="#01528a" Margin="20,20,20,10">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                        </On>
+                        <On Platform="iOS" Value="Roboto-Bold">
+                        </On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <forms:ChartView x:Name="Chart5" HeightRequest="130" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

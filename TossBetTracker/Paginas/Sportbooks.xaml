@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TossBetTracker.Sportbooks">
+    <ContentPage.Content>
+        <AbsoluteLayout x:Name="absolutelayout">
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10,0,10,60">
+                    <Frame Padding="15,10" Margin="10,20" CornerRadius="10" HasShadow="True" Visual="Material">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal">
+                                <Label FontSize="24" Text="#1" TextColor="#01528a">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="bet365.png" WidthRequest="100"></Image>
+                                
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="+ Nos gusta bet365 por la facilidad de deposito de validación de cuenta, ademas que los mercados y opciones que se ofrecen en la plataforma son de las mas amplias en el mundo." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="- Puede llevarte unos dias adaptarte a su plataforma y encontrar los mercados que buscas." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="visa.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="mastercard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="todito.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="paysafecard.png" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="spei.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="astro.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="oxxo.png" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <Button CornerRadius="5" BackgroundColor="#01528a" TextColor="White" Text="IR AL SITIO"  Clicked="Bet365_Clicked" ></Button>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="15,10" Margin="10,20" CornerRadius="10" HasShadow="True" Visual="Material">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal">
+                                <Label FontSize="24" Text="#2" TextColor="#01528a">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="betway.png" WidthRequest="100"></Image>
+                                
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="+ Betway es un sportsbook internacional, con un respaldo gigante, los metodos de deposito son los que esperarías y sus lineas son bastante competitivas." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="- Hemos encontrado el servicio de chat no tan efectivo y amable como en otros casos." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="visa.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="mastercard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="skrill.png" WidthRequest="40"></Image>
+                                
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="todito.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="paysafecard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="neteller.png" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <Button CornerRadius="5" BackgroundColor="#01528a" TextColor="White" Text="IR AL SITIO"  Clicked="Betway_Clicked" ></Button>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="15,10" Margin="10,20" CornerRadius="10" HasShadow="True" Visual="Material">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal">
+                                <Label FontSize="24" Text="#3" TextColor="#01528a">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="betcris.png" WidthRequest="100"></Image>
+                                
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="+ Plataforma muy agradable y de facil uso, buenas lineas y metodos de pago." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="– A diferencia de los demas sitios de esta lista, no tiene la opción de recuperar apuestas." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="visa.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="mastercard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="skrill.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="ecopayz.png" WidthRequest="40"></Image>
+                                
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="oxxo.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="bitcoin.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="neteller.png" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <Button CornerRadius="5" BackgroundColor="#01528a" TextColor="White" Text="IR AL SITIO"  Clicked="Betcris_Clicked" ></Button>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="15,10" Margin="10,20" CornerRadius="10" HasShadow="True" Visual="Material">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal">
+                                <Label FontSize="24" Text="#4" TextColor="#01528a">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="ganabet.png" WidthRequest="100"></Image>
+                                
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="+ Servicio al cliente, creemos que Ganabet es uno de los sportsbook con mejor atención al cliente de la lista, buenas lineas, plataforma amigable y facilidad en el retiro." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="– En ocasiones tu sesión se cierra sin aviso y en proceso de colocar tus apuestas." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="visa.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="mastercard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="oxxo.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="spei.png" WidthRequest="40"></Image>
+                                
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="paysafecard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="todito.png" WidthRequest="40"></Image>
+                            </StackLayout>
+                            <Button CornerRadius="5" BackgroundColor="#01528a" TextColor="White" Text="IR AL SITIO"  Clicked="Ganabet_Clicked" ></Button>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="15,10" Margin="10,20" CornerRadius="10" HasShadow="True" Visual="Material">
+                        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal">
+                                <Label FontSize="24" Text="#5" TextColor="#01528a">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="caliente.png" WidthRequest="100"></Image>
+                                
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="+ Facilidad de acceso, inmensidad de número de mercados y apuestas alternativas, facilidad de deposito y de retiro." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,0">
+                                <BoxView CornerRadius="5" WidthRequest="5" BackgroundColor="#01528a" HeightRequest="5" HorizontalOptions="Start" VerticalOptions="Center"></BoxView>
+                                <Label FontSize="14" Text="– Nuestro principal tema con Caliente son las lineas que ofrece, menores a la de la competencia. Y en ocasiones hemos tenido casos que el pago se realiza hasta 30 dias despues de la solicitud." TextColor="#000000">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Bold">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="#cccccc"></BoxView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" Orientation="Horizontal" Padding="20,10" Spacing="15">
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="visa.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="mastercard.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="todito.png" WidthRequest="40"></Image>
+                                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Source="spei.png" WidthRequest="40"></Image>
+                                
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="20,10" Spacing="15">
+                                <Label FontSize="12" Text="DEPOSITOS EN EFECTIVO EN SUCURSALES CALIENTE" TextColor="#000000" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="Android" Value="Roboto-Regular.ttf#Roboto-Regular">
+                                            </On>
+                                            <On Platform="iOS" Value="Roboto-Regular">
+                                            </On>
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                            </StackLayout>
+                            <Button CornerRadius="5" BackgroundColor="#01528a" TextColor="White" Text="IR AL SITIO" Clicked="Caliente_Clicked" ></Button>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

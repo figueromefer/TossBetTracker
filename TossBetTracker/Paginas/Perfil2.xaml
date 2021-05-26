@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" xmlns:local="clr-namespace:Toss" x:Class="TossBetTracker.Perfil2"  xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
+    <ContentPage.Content>
+        <AbsoluteLayout x:Name="absolutelayout">
+            <StackLayout BackgroundColor="#ffffff" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
+            </StackLayout>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0,10,0,25">
+                    <StackLayout x:Name="Seccion1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
+                        <Label x:Name="nombreusuario" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Nombre" FontSize="16" FontAttributes="Bold" TextColor="#0B6F96"></Label>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            <StackLayout x:Name="Stackcapital" WidthRequest="80"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  Spacing="0">
+                                <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Capital" FontSize="16" FontAttributes="Bold" TextColor="#E0B928"></Label>
+                                <Label x:Name="lblcapital" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Nombre" FontSize="14" TextColor="#676464"></Label>
+                            </StackLayout>
+                            <controls:CircleImage Source="profile" WidthRequest="130" HeightRequest="130" BorderColor="White" BorderThickness="2" x:Name="fotoperfil" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"></controls:CircleImage>
+                            <StackLayout x:Name="Stacktosscoins"  WidthRequest="80" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"  Spacing="0">
+                                <Image Source="moneda.png" WidthRequest="35" HorizontalOptions="CenterAndExpand"></Image>
+                                <Label x:Name="lbltosscoins" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="0" FontSize="16" TextColor="#676464"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        <Frame HasShadow="true" Visual="Material" Padding="5" BackgroundColor="#025189" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="20,5">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout x:Name="stackcol1" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Spacing="0" Padding="3">
+                                    <Label x:Name="lblapuestas" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="3" FontSize="22" FontAttributes="Bold" TextColor="#FFFFFF"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Apuestas" FontSize="10" TextColor="#ffffff"></Label>
+                                </StackLayout>
+                                <StackLayout x:Name="stackcol2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Spacing="0" Padding="3">
+                                    <Label x:Name="lblutscap" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="6%" FontSize="22" FontAttributes="Bold" TextColor="#FFFFFF"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Ut S/Capital" FontSize="10" TextColor="#ffffff"></Label>
+                                </StackLayout>
+                                <StackLayout x:Name="stackcol3" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Spacing="0" Padding="3">
+                                    <Label x:Name="lblutsap" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="12%" FontSize="22" FontAttributes="Bold" TextColor="#FFFFFF"></Label>
+                                    <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Ut S/Apostado" FontSize="10" TextColor="#ffffff"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                    <BoxView HeightRequest="5" BackgroundColor="#c9c9c9" HorizontalOptions="FillAndExpand"></BoxView>
+                    <StackLayout x:Name="Seccion2" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="15,0">
+                        <Label HorizontalOptions="Start" Margin="25,0,0,0" HorizontalTextAlignment="Center" Text="Ganancias" FontSize="16" FontAttributes="Bold" TextColor="#0B6F96"></Label>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Spacing="0">
+                            <StackLayout x:Name="Stackganadas" HorizontalOptions="Start" VerticalOptions="Center" Spacing="0">
+                                <Label x:Name="lblganadas" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="0%" FontSize="16" TextColor="#676464"></Label>
+                                <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Ganadas" FontSize="16" TextColor="#0B6F96"></Label>
+                            </StackLayout>
+                            <forms:ChartView x:Name="Chart4" HeightRequest="300" HorizontalOptions="FillAndExpand"  />
+                            <StackLayout x:Name="Stackperdidas" HorizontalOptions="Start" VerticalOptions="Center"  Spacing="0">
+                                <Label x:Name="lblperdidas" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="0%" FontSize="16" TextColor="#676464"></Label>
+                                <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Text="Perdidas" FontSize="16" TextColor="#0B6F96"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="5" BackgroundColor="#c9c9c9" HorizontalOptions="FillAndExpand"></BoxView>
+                    <StackLayout x:Name="Seccion3" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Label HorizontalOptions="Start" Margin="25,0,0,0" HorizontalTextAlignment="Center" Text="Apuestas" FontSize="16" FontAttributes="Bold" TextColor="#0B6F96"></Label>
+                        <StackLayout x:Name="Stackfeed">
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

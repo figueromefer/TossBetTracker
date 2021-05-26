@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD4CE8CB-3F8F-4E73-A087-7858D1D90429}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TossBetTracker.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TossBetTracker.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Developer: Fernando  figueroa (C2X44U23V6)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Developer: Fernando  figueroa (C2X44U23V6)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchExtraArgs>--linksdkonly --optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IosPageRenderer.cs" />
+    <Compile Include="LargeHeaderFixingNavigationPageRenderer.cs" />
+    <Compile Include="BetterPickerRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xam.Plugins.Settings">
+      <Version>3.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.1.0.442</Version>
+    </PackageReference>
+    <PackageReference Include="Com.OneSignal">
+      <Version>3.8.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.DeviceInfo">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.6.0.726</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\abierta.png" />
+    <BundleResource Include="Resources\aplus.png" />
+    <BundleResource Include="Resources\astro.png" />
+    <BundleResource Include="Resources\Bank.png" />
+    <BundleResource Include="Resources\bet365.png" />
+    <BundleResource Include="Resources\betcris.png" />
+    <BundleResource Include="Resources\betway.png" />
+    <BundleResource Include="Resources\bitcoin.png" />
+    <BundleResource Include="Resources\bodog.png" />
+    <BundleResource Include="Resources\boleto_a.png" />
+    <BundleResource Include="Resources\boleto_i.png" />
+    <BundleResource Include="Resources\boton_checkin.png" />
+    <BundleResource Include="Resources\caliente.png" />
+    <BundleResource Include="Resources\chat_eliminar.png" />
+    <BundleResource Include="Resources\chat_enviar.png" />
+    <BundleResource Include="Resources\chats_nchat.png" />
+    <BundleResource Include="Resources\chats.png" />
+    <BundleResource Include="Resources\ecopayz.png" />
+    <BundleResource Include="Resources\face.png" />
+    <BundleResource Include="Resources\FIFA.png" />
+    <BundleResource Include="Resources\flotante_buscar.png" />
+    <BundleResource Include="Resources\fondo.png" />
+    <BundleResource Include="Resources\fondo2.png" />
+    <BundleResource Include="Resources\FontAwesome5BrandsRegular.otf" />
+    <BundleResource Include="Resources\FontAwesome5Regular.otf" />
+    <BundleResource Include="Resources\FontAwesome5Solid.otf" />
+    <BundleResource Include="Resources\friends_solicitar.png" />
+    <BundleResource Include="Resources\ganabet.png" />
+    <BundleResource Include="Resources\ganado.png" />
+    <BundleResource Include="Resources\general_back2.png" />
+    <BundleResource Include="Resources\grupos_ngrupo.png" />
+    <BundleResource Include="Resources\i_correo.png" />
+    <BundleResource Include="Resources\i_pass.png" />
+    <BundleResource Include="Resources\icon180.png" />
+    <BundleResource Include="Resources\icono_amigos2.png" />
+    <BundleResource Include="Resources\icono_deportes.png" />
+    <BundleResource Include="Resources\icono_estadisticas.png" />
+    <BundleResource Include="Resources\icono_estadisticas2.png" />
+    <BundleResource Include="Resources\icono_grupos.png" />
+    <BundleResource Include="Resources\icono_home2.png" />
+    <BundleResource Include="Resources\icono_mensajes2.png" />
+    <BundleResource Include="Resources\icono_perfil2.png" />
+    <BundleResource Include="Resources\icono_spb.png" />
+    <BundleResource Include="Resources\intro1.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo2.png" />
+    <BundleResource Include="Resources\logoazul.png" />
+    <BundleResource Include="Resources\mastercard.png" />
+    <BundleResource Include="Resources\menu.png" />
+    <BundleResource Include="Resources\MLB.png" />
+    <BundleResource Include="Resources\moneda.png" />
+    <BundleResource Include="Resources\NBA.png" />
+    <BundleResource Include="Resources\NCAAB.png" />
+    <BundleResource Include="Resources\NCAAF.png" />
+    <BundleResource Include="Resources\neteller.png" />
+    <BundleResource Include="Resources\NFL.png" />
+    <BundleResource Include="Resources\NGL.png" />
+    <BundleResource Include="Resources\NHL.png" />
+    <BundleResource Include="Resources\oxxo.png" />
+    <BundleResource Include="Resources\parlay.png" />
+    <BundleResource Include="Resources\paysafecard.png" />
+    <BundleResource Include="Resources\perdido.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\redes.png" />
+    <BundleResource Include="Resources\Roboto-Bold.ttf" />
+    <BundleResource Include="Resources\Roboto-Regular.ttf" />
+    <BundleResource Include="Resources\skrill.png" />
+    <BundleResource Include="Resources\slogan.png" />
+    <BundleResource Include="Resources\solicitudes_aceptar.png" />
+    <BundleResource Include="Resources\solicitudes_negar.png" />
+    <BundleResource Include="Resources\spei.png" />
+    <BundleResource Include="Resources\splash_centered.xml" />
+    <BundleResource Include="Resources\splash.png" />
+    <BundleResource Include="Resources\ticket.png" />
+    <BundleResource Include="Resources\todito.png" />
+    <BundleResource Include="Resources\trash.png" />
+    <BundleResource Include="Resources\usuarios_lupa.png" />
+    <BundleResource Include="Resources\visa.png" />
+    <BundleResource Include="Resources\i_money.png" />
+    <BundleResource Include="Resources\MMA.png" />
+    <BundleResource Include="Resources\WBC.png" />
+    <BundleResource Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TossBetTracker\TossBetTracker.csproj">
+      <Project>{FBD662C4-7902-450A-9B07-C6D8104FF0E9}</Project>
+      <Name>TossBetTracker</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

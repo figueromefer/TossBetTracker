@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Toss" x:Class="TossBetTracker.Legal" >
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label FontSize="22" Text="Legal" TextColor="#01528a" Margin="20,20,20,30">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Roboto-Bold.ttf#Roboto-Bold">
+                        </On>
+                        <On Platform="iOS" Value="Roboto-Bold">
+                        </On>
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Label FontSize="14" Text="Toss App es una aplicación social y de control de estadísticas; en ningún momento somos o extendemos una propuesta de apuesta, juego o inversión. " TextColor="#01528a" Margin="20,0,20,10"></Label>
+            <Label FontSize="14" Text="Toss busca promover la educación en la industria de entretenimiento online, por medio de una red social con control de estadísticas e información. " TextColor="#01528a" Margin="20,0,20,10"></Label>
+            <Label FontSize="14" Text="Toss no es un operador o corredor de apuestas. " TextColor="#01528a" Margin="20,0,20,10"></Label>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
