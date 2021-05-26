@@ -18,7 +18,7 @@ namespace TossBetTracker
         StackLayout stack1, apuestasstack = null;
         StackLayout pestanas = null;
         Image flotante_boleto = null;
-        int boletos = 0;
+        int boletos = 0; 
         StackLayout modal = null;
         StackLayout stackboleto = null;
         AbsoluteLayout absoluteLayout = null;
